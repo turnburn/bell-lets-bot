@@ -16,5 +16,5 @@ api = tweepy.API(auth)
  
 while(1==1):
     total += 0.05;
-    api.update_status("#BellLetsTalk : This bot has raised $"+str(total))
+    api.update_status("#BellLetsTalk : This bot has raised $"+str("{:4.2f}".format(total)))
     time.sleep(30)#Tweet every 30 seconds
